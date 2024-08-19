@@ -1,0 +1,267 @@
+
+.worksDetail-main{
+  padding-top: 24vh;
+}
+.worksDetail-wrap_inner{
+  padding: 0 14%;
+}
+
+/* worksDetail-top */
+.worksDetail-top{
+  width: fit-content;
+  margin: 0 auto;
+}
+.worksDetail-top_img{
+  max-width:1200px;
+  width: 100%;
+  border: 1px solid #E8E8E8;
+}
+.worksDetail-top_img img{
+  width: 100%;
+}
+.worksDetail-top_txt{
+font-weight: 400;
+margin-top: 10px;
+}
+.worksDetail-top_txt a{
+  border-bottom: 1px solid #C6C6C6;
+}
+.worksDetail-top_txt a:hover{
+  opacity: .7;
+}
+.worksDetail-title{
+  font-weight: 400;
+  line-height: 2.5;
+}
+.worksDetail-txt p{
+  font-weight: 500;
+  line-height: 2.5;
+}
+
+/* contents */
+.worksDetail-contents{
+  padding: 90px 0 100px;
+}
+.worksDetail-contents_block{
+  width: 569px;
+}
+.worksDetail-contents_inner{
+  padding-left: 14%;
+}
+.worksDetail-contents_txt{
+  display: flex;
+  justify-content: space-between;
+}
+.worksDetail-txt{
+  width: 450px;
+  margin-bottom: 30px;
+}
+
+/* item_list */
+.worksDetail-item_list{
+  display: flex;
+  justify-content: center;
+  padding: 0 14%;
+}
+.worksDetail-item{
+  max-width: 500px;
+  width: 50%;
+  margin: 0 auto;
+}
+.worksDetail-item:nth-of-type(1){
+  margin-right: 30px;
+}
+.worksDetail-item img{
+  border: 20px solid #F6F6F6;
+}
+
+/* banner */
+.worksDetail-top_banner{
+  width: fit-content;
+  margin: 0 auto;
+}
+.banner-contents{
+  width: fit-content;
+  margin: 0 auto;
+}
+.banner-contents_inner{
+  padding-left: 0;
+}
+.banner-top_img{
+  max-width:660px;
+  width: 100%;
+  border: 1px solid #E8E8E8;
+}
+.dummy-list{
+  display: block;
+}
+.dummy-item{
+  max-width: 1080px;
+  width: 100%;
+}
+
+/* next prev */
+.page-nav{
+  max-width: 2000px;
+  width: 100%;
+  margin: 150px auto 300px;
+  padding: 0 14%;
+}
+.page-next-prev{
+  display: flex;
+  justify-content: space-between;
+}
+.next,.prev{
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin-top: 0;
+}
+.next:hover,
+.prev:hover{
+  opacity: .7;
+}
+.next-link{
+  padding-left: 20px;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: 4px;
+}
+.next-link::after{
+  content: "";
+  width: 15px;
+  top: 46%;
+}
+.next-link::before{
+  content: "";
+  transform: rotate(-130deg);
+}
+.next-link::after,
+.next-link::before{
+  left: 0;
+}
+.next-link:hover::after,
+.next-link:hover::before{
+  left: -3px;
+}
+.next-link:hover::after{
+  width: 15px;
+}
+.prev-link {
+  padding-right: 20px;
+  margin-right: 4px;
+}
+.prev-link::after{
+  content: "";
+  width: 15px;
+}
+.prev-link:hover::after,
+.prev-link:hover::before{
+  right: -3px;
+}
+.prev-link:hover::after{
+  width: 15px;
+}
+
+/* worksall-btn */
+.foot-contact_link:hover{
+  background: #ffffff;
+  color: #111111;
+}
+.foot-worksall{
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  transition: all 0.5s ease;
+}
+.foot-worksall:hover{
+  letter-spacing: .2em;
+}
+
+@media screen and (max-width:1000px){
+  .worksDetail-contents_inner {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width:900px){
+  .worksDetail-wrap_inner{
+    padding: 0 10%;
+  }
+  .worksDetail-item{
+    width: 100%;
+  }
+  .page-nav{
+    padding: 0 10%;
+  }
+}
+@media screen and (max-width:700px){
+  .worksDetail-contents_txt {
+    display: block;
+  }
+  .worksDetail-title{
+    margin-bottom: 5px;
+  }
+  .worksDetail-title,
+  .worksDetail-txt p{
+    line-height: 2;
+  }
+  .worksDetail-contents_block {
+    width: 100%;
+  }
+  .worksDetail-txt {
+    width: 100%;
+  }
+  .worksDetail-item img{
+    border: none;
+  }
+  .worksDetail-item_list {
+    display: block;
+    background: #F6F6F6;
+    padding: 10% 10%;
+  }
+  .worksDetail-item{
+    margin: 0 auto;
+  }
+  .item-01{
+    margin-bottom: 40px;
+    margin-right: auto;
+  }
+  .dummy-item{
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width:500px){
+  .worksDetail-contents_block {
+    width: 100%;
+  }
+}
+@media screen and (max-width:375px){
+  .worksDetail-contents {
+    padding: 70px 0;
+  }
+  .worksDetail-top_txt{
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  .worksDetail-title{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1;
+  }
+  .worksDetail-txt p{
+    font-weight: 400;
+    line-height: 2.3;
+    letter-spacing: 0.07em;
+  }
+  .page-nav{
+    margin: 46px auto 180px;
+  }
+  .foot-worksall{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+}
+
+
+
